@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA</title>
+    <style>
+        html, body{
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        nav{
+            background-color: darkmagenta;
+            position: sticky;
+            top: 0;
+        }
+        nav a{
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            display: inline-block;
+        }
+        section{
+            height: calc(100vh - 50px);
+            scroll-margin-top: 50px;
+        }
+        #home{
+            background-color: orange;
+        }
+        #galery{
+            background-color: royalblue;
+        }
+        #about{
+            background-color: aquamarine;
+        }
+        #contact{
+            background-color: lime;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: darkmagenta;
+
+        }
+        .img{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            transition: .3s;
+        }
+        .img:hover{
+            scale: 1.2;
+        }
+        .phone{
+            background: url(phone.png) center/ cover ;
+        }
+        .email{
+            background: url(email.png) center/ cover;
+        }
+        .whatsapp{
+            background: url(whatsapp.png) center/ cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#galery">Galery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">Home Page</section>
+    <section id="galery">Galery Studio</section>
+    <section id="about">About Page</section>
+    <section id="contact">Contact Page</section>
+
+
+    <footer>
+        <a href="tel:+994509534474">
+            <div class="img phone"></div>
+         </a>
+        <a href="mailto:ayselus@gmail.com">
+            <div class="img email"></div>
+        </a>
+        <a href="https://wa.me/+994509534474">
+            <div class="img whatsapp"></div>
+        </a>
+    </footer>
+</body>
+</html>
